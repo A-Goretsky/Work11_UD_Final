@@ -635,6 +635,7 @@ void draw_line(int x0, int y0, double z0,
   x = x0;
   y = y0;
   z = z0;
+  dz = z1 - z0;
   A = 2 * (y1 - y0);
   B = -2 * (x1 - x0);
   int wide = 0;
@@ -701,6 +702,10 @@ void draw_line(int x0, int y0, double z0,
       d+= d_east;
     }
     loop_start++;
+	z += dz;
   } //end drawing loop
-  plot( s, zb, c, x1, y1, z );
+  if (x >= 0 && y >= 0 && x < 500 && y < 500) {
+  	zb[x][y] = z;
+  	plot( s, zb, c, x1, y1, z );
+}
 } //end draw_line
