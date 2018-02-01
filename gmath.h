@@ -3,6 +3,6 @@
 
 #include "matrix.h"
 
-double *calculate_normal(struct matrix *polygons, int i);
+double* calculate_normal(struct matrix* polygons, int i);
 
 #endif
