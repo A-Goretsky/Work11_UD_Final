@@ -454,7 +454,7 @@ void my_main() {
 					break;
 			} // end opcode switch
 			  // printf("\n");
-		} // end operation loop
+		}     // end operation loop
 
 		free_stack(systems);
 		free_matrix(tmp);
