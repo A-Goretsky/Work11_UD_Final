@@ -2,3 +2,7 @@ mdl
 y.tab*
 *.yy.c
 *.o
+*.png
+*.jpg
+*.jpeg
+*.gif

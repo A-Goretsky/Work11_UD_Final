@@ -1,5 +1,5 @@
 OBJECTS= symtab.o print_pcode.o matrix.o my_main.o display.o draw.o gmath.o stack.o
-CFLAGS= -g
+CFLAGS= -g -Ofast
 LDFLAGS= -lm
 CC= gcc
 

@@ -278,7 +278,7 @@ static const short yycheck[] = {0,  15, 4,  3,  15, 5,  6,  7,  8,  9,  10, 11, 
 #	endif
 
 #	ifdef YYSTACK_ALLOC
-        /* Pacify GCC's `empty if-body' warning. */
+/* Pacify GCC's `empty if-body' warning. */
 #		define YYSTACK_FREE(Ptr)                                                                                      \
 			do { /* empty */                                                                                           \
 				;                                                                                                      \
@@ -304,19 +304,19 @@ union yyalloc {
 #	endif
 };
 
-/* The size of the maximum gap between one aligned stack and the next.  */
+    /* The size of the maximum gap between one aligned stack and the next.  */
 #	define YYSTACK_GAP_MAX (sizeof(union yyalloc) - 1)
 
-/* The size of an array large to enough to hold all stacks, each with
-   N elements.  */
+    /* The size of an array large to enough to hold all stacks, each with
+       N elements.  */
 #	if YYLSP_NEEDED
 #		define YYSTACK_BYTES(N) ((N) * (sizeof(short) + sizeof(YYSTYPE) + sizeof(YYLTYPE)) + 2 * YYSTACK_GAP_MAX)
 #	else
 #		define YYSTACK_BYTES(N) ((N) * (sizeof(short) + sizeof(YYSTYPE)) + YYSTACK_GAP_MAX)
 #	endif
 
-/* Copy COUNT objects from FROM to TO.  The source and destination do
-   not overlap.  */
+    /* Copy COUNT objects from FROM to TO.  The source and destination do
+       not overlap.  */
 #	ifndef YYCOPY
 #		if 1 < __GNUC__
 #			define YYCOPY(To, From, Count) __builtin_memcpy(To, From, (Count) * sizeof(*(From)))
@@ -330,11 +330,11 @@ union yyalloc {
 #		endif
 #	endif
 
-/* Relocate STACK from its old location to the new one.  The
-   local variables YYSIZE and YYSTACKSIZE give the old and new number of
-   elements in the stack, and YYPTR gives the new location of the
-   stack.  Advance YYPTR to a properly aligned location for the next
-   stack.  */
+    /* Relocate STACK from its old location to the new one.  The
+       local variables YYSIZE and YYSTACKSIZE give the old and new number of
+       elements in the stack, and YYPTR gives the new location of the
+       stack.  Advance YYPTR to a properly aligned location for the next
+       stack.  */
 #	define YYSTACK_RELOCATE(Stack)                                                                                    \
 		do {                                                                                                           \
 			YYSIZE_T yynewbytes;                                                                                       \
